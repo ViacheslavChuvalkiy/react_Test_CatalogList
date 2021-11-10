@@ -11,31 +11,37 @@
     @include hoverCardStyle();
   }
   .cardImg {
+    @include flexColumntyle;
+    align-items: center;
     flex: 0 0 7.5rem;
     height: 100%;
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        padding: 0;
+        padding: 0 0 0.2rem 0;
       }
+    span{
+      font-size: 1rem;
+    }
   }
   .cardInfo {
-    padding: 1rem;
+    @include flexColumntyle;
+    justify-content: space-between;
+    padding: 1rem 1rem 0.4rem 1rem ;
     text-align: left;
     .cardName {
       display: block;
       width: 100%;
       margin: 1rem 0 0 0;
+      font-size: $fs-small;
     }
-    .cardPrice {
 
-    }
     .cardLink {
-
-    }
-    .category{
-
+      @include linkStyle;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 }

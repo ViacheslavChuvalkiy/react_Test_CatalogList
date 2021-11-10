@@ -12,3 +12,13 @@
 @mixin hoverCardStyle() {
   box-shadow: 0 0.2rem 0.3rem 0.3rem $color-hoverBoxShadow;
 }
+
+@mixin linkStyle {
+  color: inherit;
+  text-decoration: none;
+}
+
+@mixin flexColumntyle{
+  display: flex;
+  flex-direction: column;
+}

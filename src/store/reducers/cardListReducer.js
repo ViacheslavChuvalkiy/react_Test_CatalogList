@@ -1,5 +1,6 @@
 const initialState = {
   cardList: [],
+  filter: "",
   isLoadingData: false,
   isError: null
 };
@@ -14,6 +15,11 @@ function cardListReducer(state = initialState, action) {
       return {
         ...state,
         isLoadingData: action.isLoadingData
+      };
+    case 'IS_FILTERED_DATA':
+      return {
+        ...state,
+        filter: action.filter
       };
     case 'IS_ERROR':
       return {
