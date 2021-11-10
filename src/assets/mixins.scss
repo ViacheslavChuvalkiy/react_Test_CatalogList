@@ -1,0 +1,14 @@
+@mixin container {
+  max-width: 77rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+@mixin borderStyle{
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.3rem 0.3rem $color-boxShadow;
+}
+
+@mixin hoverCardStyle() {
+  box-shadow: 0 0.2rem 0.3rem 0.3rem $color-hoverBoxShadow;
+}

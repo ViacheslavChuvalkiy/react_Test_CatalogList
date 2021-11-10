@@ -1,0 +1,17 @@
+@import "./src/assets/mixins";
+.header {
+  width: 100%;
+    @include container;
+  img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    padding: 0;
+  }
+  span {
+    margin-left: 1.3rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+}
+

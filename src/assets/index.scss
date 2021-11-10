@@ -1,0 +1,17 @@
+@import "./vars";
+@import "./mixins";
+body {
+  margin: 0;
+  color: $color-main;
+  font-family: $ff-main;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: calc(100vh - (100vh - 100%));
+  }
+}
